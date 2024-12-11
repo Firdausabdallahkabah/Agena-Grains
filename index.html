@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agena Grains</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/9.x/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.x/firebase-database.js"></script>
+
+<body>
+    <header>
+        <div class="logo">Agena Grains</div>
+        <button class="menu-toggle">=</button>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a> </li>
+                <li><a href="#Products">Products</a> </li>
+                <li><a href="#About">About Us</a> </li>
+                <li><a href="#Contact">Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="Home" class="hero">
+        <h1>Welcome to Agena Grains</h1>
+        <p>Your Partner In Grain Excellent</p>
+        <a href="#Products" class="btn">Shop Now!</a>
+    </section>
+    <section id="Catalog" class="container">
+        <h2 class="text-center my-4">Our Products</h2>
+        <div class="catalog-grid">
+            <div class="catalog-item" data-id="1">
+                <img src="image/maize.jpeg" class="card-img-top" alt="Maize">
+                <div class="card-body"></div>
+                <h3 class="card-title">maize</h3>
+                <p class="card-text">High-quality maize available in bulk</p>
+                <span class="price">$20.00 per kg</span>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="catalog-item" data-id="2">
+                <img src="image/beans.jpg" alt="beans">
+                <h3>Beans</h3>
+                <p>Premium beans sourced from the best farms</p>
+                <span class="price">$10.00 per kg</span>
+                <button class="btn add-to-cart">Add to Cart!</button>
+            </div>
+            <div class="catalog-item" data-id="3">
+                <img src="image/groundnut.jpg" alt="groundnut">
+                <h3>Groundnuts</h3>
+                <p>Fresh and Nutritious groundnuts.</p>
+                <span class="price">$15.00 per kg</span>
+                <button class="btn add-to-cart">Add to Cart!</button>
+            </div>
+            <div class="catalog-item" data-id="4">
+                <img src="image/bambara beans.jpg" alt="bambara beans">
+                <h3>Bambara Beans</h3>
+                <p>Premium beans sourced from the best farms.</p>
+                <span class="price">$13.00 per kg</span>
+                <button class="btn add-to-cart">Add to Cart!</button>
+            </div>
+        </div>
+    </section>
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-summary"> Your cart is empty.</div>
+    </section>
+    <div class="filter">
+        <label for="category">Filter by category:</label>
+        <select id="category">
+            <option value="all">All</option>
+            <option value="maize">Maize</option>
+            <option value="groundnut">groundnut</option>
+            <option value="beans">Beans</option>
+        </select>
+    </div>
+    <section id="About">
+        <h2>About us</h2>
+        <p>At Agena Grains, we pride ourselves on providing High-quality Grains, including
+            maize,beans,groundnut,millet,local rice,bambara beans,soybeans. Our Mission is to deliver fresh,nutritious
+            grains to homes and buisnessess alike.Agena Grains specializes in the buying and selling of high-quality
+            agricultural products, including maize, beans, groundnuts, millet, local rice, and soybeans. We are
+            committed to providing fresh and nutritious grains to meet the needs of our customers while supporting local
+            farmers.</p>
+    </section>
+    <section id="Contact">
+        <h2>Contact Us</h2>
+        <form id="login-form">
+            <input type="email" placeholder="Email" id="email" required>
+            <input type="password" placeholder=" password" id="password" required>
+            <button type="submit">Login</button>
+            <textarea placeholder ="Your message"  required></textarea>
+            <button type="sumit"> Send message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Agena Grains. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>
